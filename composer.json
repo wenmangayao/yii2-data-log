@@ -1,0 +1,21 @@
+{
+    "name": "wenmangayao/yii2-data-log",
+    "description": "ActiveRecord operation log extension for Yii2 frameworks",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "datalog"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "liushiyao",
+            "email": "thitlsy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "wenmangayao\\datalog\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "wenmangayao\\datalog\\Bootstrap"
+    }
+}

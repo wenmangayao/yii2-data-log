@@ -1,0 +1,50 @@
+.table td {
+    text-align: left;
+}
+
+.Diff {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+.Diff .Column {
+    text-align: right;
+    background: #f3f3f3;
+    width: 10em;
+    padding: 1px 5px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.Diff td:not(.Column) {
+    width: 30em;
+    text-align: left;
+}
+
+.Diff td {
+    vertical-align: top;
+    padding: 1px 2px 1px 5px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+.Diff .NewValue {
+    background: #eaffea;
+}
+
+.Diff .OldValue {
+    background: #ffecec;
+}
+
+.Diff tr.DataRow:hover > td:not(:first-child) {
+    background: #fff3eb !important;
+}
+
+.Diff tr.DataRow:hover > td:first-child {
+    background: #ffe8be !important;
+}
