@@ -65,7 +65,7 @@ class Datalog extends Module
         if (!parent::beforeAction($action)) {
             return false;
         }
-        if (in_array(Yii::$app->id, $this->ignoreApp)) {
+        if (in_array(Yii::$app->id, $this->Forbidden)) {
             throw new ForbiddenHttpException('You are not allowed to access this page.');
         }
         return true;

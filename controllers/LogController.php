@@ -9,13 +9,6 @@ use wenmangayao\datalog\actions\LogAction;
 
 class LogController extends BaseController
 {
-    public function behaviors()
-    {
-        return [
-            'access' => AccessControl::getAccessControlFilter()
-        ];
-    }
-
     public function actions()
     {
         return [
